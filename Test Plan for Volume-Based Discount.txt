@@ -1,0 +1,51 @@
+Test Plan for Volume-Based Discounts Feature
+
+1. Objective:
+The objective of this test plan is to ensure that the volume-based discounts feature is tested thoroughly and all critical functionalities related to the feature are validated to ensure it works as expected. The primary focus will be to ensure that the discounts are applied correctly in the shopping cart, the discounts are not abused, and the checkout process works as expected.
+
+2. Scope:
+The test plan will cover the following functionalities:
+- Verify that volume-based discounts are applied correctly when buying five or more items.
+- Verify that discounts are not applied when less than five items are purchased.
+- Verify that manual promotion codes are applied correctly.
+- Verify that the correct discount is applied when both the promotion code and volume-based discounts are used together. Higher savings to the consumer should be applied.
+- Verify that the checkout process works as expected.
+
+3. Testing Strategy:
+The following testing strategies will be employed:
+- Functional Testing: This will involve verifying that the feature works as expected and meets the functional requirements.
+- Integration Testing: This will involve testing the interaction between the feature and other systems or components.
+- Regression Testing: This will involve testing the feature after changes are made to ensure that it continues to work as expected.
+- Security Testing: This will involve testing the feature to ensure that it is not vulnerable to malicious attacks such as a %100 discount.
+
+4. Testing Objectives:
+The following objectives will be achieved by the testing:
+- Verify that the feature meets the functional requirements as specified in the user story.
+- Ensure that the feature is reliable, robust and operates correctly in all conditions.
+- Verify that the feature is easy to use and intuitive for the end-users.
+- Ensure that the feature is secure and not vulnerable to malicious attacks.
+
+5. Test Cases:
+The following test cases will be executed to achieve the testing objectives:
+- Verify that the volume-based discounts are applied correctly for 1, 4, 5, and 9 items.
+- Verify that the discounts are not applied when less than 5 items are purchased.
+- Verify that manual promotion codes are applied correctly for 1, 4, 5, and 9 items.
+- Verify that the correct discount is applied when both the promotion code and volume-based discounts are used together and that higher savings to the consumer should be applied.
+- Verify that the checkout process works as expected, and the correct amount is charged to the user's credit card.
+- Verify that the API is secure and not vulnerable to malicious attacks.
+
+6. Tooling:
+The following tools will be used to implement the test plan:
+- Selenium WebDriver for UI testing.
+- Python programming language for test automation scripts.
+- Postman for API testing and Python for API automation
+- Test management tools like TestRail or JIRA for test planning and execution.
+
+7. Criteria/Dependencies:
+- Access to the testing environment that simulates the production environment.
+- Availability of test data, including valid credit cards for payment processing.
+- Clear understanding of the expected behavior of the feature from the stakeholders.
+- Well-defined test cases and test data.
+
+8. Conclusion:
+This test plan provides a comprehensive approach to testing the volume-based discounts feature, which will ensure that the feature meets the requirements and works as expected. The test plan will ensure that the feature is reliable, robust, and easy to use, while also ensuring that it is secure and not vulnerable to malicious attacks.

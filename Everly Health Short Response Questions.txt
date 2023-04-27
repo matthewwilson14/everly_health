@@ -1,0 +1,48 @@
+1. In your opinion, under what conditions does a feature become eligible for automation?
+
+A feature becomes eligible for automation when it is stable for repetitive testing.
+If the feature has high priority tests identified then those are eligible for automation. This is to make sure the high priority tests are constantly tested and covered in the automation. 
+If the feature needs to be tested with complex data combinations it becomes eligible for automation. Automation is very good at testing quickly for lots of different data combinations. 
+If the feature has dependencies on other parts of the application and require frequent regression testing it should become eligible for automation.
+
+
+
+2. When testing this feature, how would you go about debugging a scenario in which nothing happens when clicking
+the 'Place Order' button on checkout?
+
+I would,
+1. Check the browser console errors that might be stopping the button from working properly.
+2. Check the network tab in the dev tools to see if there are any errors with the API requests.
+3. Verify that all required fields on the checkout page have been filled out correctly.
+4. Try reproducing the issue in a different environment, such as a different browser or device.
+
+Once the cause of the issue has been identified, I would communicate it to the development team and Product Owner. Here are some steps I would take:
+
+1. Create a detailed bug report that includes a description of the issue, steps to reproduce the issue, and any relevant screenshots, videos, or error messages.
+2. Prioritize the bug report based on its severity and impact on the user.
+3. Assign the bug to the appropriate developer 
+4. Monitor the bug and provide updates to the Product Owner and any stakeholders as needed.
+5. Work with the development team to verify that the issue has been resolved and tested.
+
+
+
+3. If you were going to be on vacation the day this feature was deployed to staging and needed to be smoke tested, quickly write/explain the manual steps needed to verify this feature is working as intended and ready for release to production. Pretend as if this would be handed off to the Product Owner to verify the feature.
+
+
+1. Add 5 or more items to the shopping cart and go to the checkout page.
+2. Verify the discount is applied and that the discount is equal to the price of one item.
+3. Add less than 5 items to the shopping cart and go to the checkout page.
+4. Verify the no discount is applied 
+5. Manually apply a promotion code and verify that the %15 off has been applied
+6.Add 5 or more items and add the promo code. Go to the shopping cart.
+7. Verify the higher discount is applied.
+8. Submit payment and complete the purchase, ensuring that the correct amount is charged to the user and that the order is successfully processed.
+
+
+
+
+4. Imagine that certain bugs were discovered late in the testing/integration process and the feature was supposed to deploy tomorrow. How would you communicate the issues to the product owner? Would these issues block or delay the release? Why or why not?
+
+I would communicate the issues to the product owner immediately probably by slack or set up a meeting as soon as possible depending on how critical the bugs were. In the bug report I would include a detailed description of the issues, the impact on the system, and the risks associated with the bugs. 
+The decision to block or delay a release depends on the severity of the bugs and the significance of the feature. If the bugs are critical and can lead to significant problems for the end-users, it is advisable to block the release until the bugs are fixed. However, if the bugs are minor and have minimal impact on the end-users we could still release with the known bugs. In either case the call ultimately falls on the product manager to release or not.
+
